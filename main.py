@@ -602,7 +602,7 @@ async def upload(bot: Client, m: Message):
             elif "https://appx-transcoded-videos-mcdn.akamai.net.in/videos/bhainskipathshala-data/" in url:
                 url = url.replace("https://appx-transcoded-videos-mcdn.akamai.net.in/videos/bhainskipathshala-data/", "")
                 name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "@").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
-                name = f'{str(count).zfill(3)}) {name1[:60]}'
+                name = f'[@ARJUN_AI]{name1[:60]}'
                 cmd = f'yt-dlp -o "{name}.mp4" "{url}"'
 
             elif "apps-s3-jw-prod.utkarshapp.com" in url:
@@ -683,7 +683,7 @@ async def upload(bot: Client, m: Message):
                 cpvod = f'**[🎬] 𝗩𝗶𝗱_𝗜𝗱 : {str(count).zfill(3)}.\n\n\n☘️𝗧𝗶𝘁𝗹𝗲 𝗡𝗮𝗺𝗲 ➤ {name1}.({res}).𝔗𝔲𝔰𝔥𝔞𝔯.mkv\n\n\n🔗𝗩𝗶𝗱𝗲𝗼 𝗨𝗿𝗹 ➤ <a href="{url}">__Click Here to Watch Video__</a>\n\n\n<pre><code>📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}</code></pre>\n\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}**'
                 cimg = f'**[📁] 𝗜𝗺𝗴_𝗜𝗱 : {str(count).zfill(3)}.\n\n\n☘️𝗧𝗶𝘁𝗹𝗲 𝗡𝗮𝗺𝗲 ➤ {name1}.𝔗𝔲𝔰𝔥𝔞𝔯.jpg\n\n\n<pre><code>📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}</code></pre>\n\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}**'
                 cczip = f'**[📁] 𝗣𝗱𝗳_𝗜𝗱 : {str(count).zfill(3)}.\n\n\n☘️𝗧𝗶𝘁𝗹𝗲 𝗡𝗮𝗺𝗲 ➤ {name1}.𝔗𝔲𝔰𝔥𝔞𝔯.zip\n\n\n<pre><code>📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}</code></pre>\n\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}**'
-                cc1 = f'**🌟 𝗡𝗮𝗺𝗲 ➤ {name1}[@SABHAIJEEKA].mkv\n\n<pre><code>👑 𝗕𝗮𝘁𝗰𝗵 ➤ {b_name}</code></pre>\n\n\n📥 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 ➤ @Jeekamilegabot**'
+                cc1 = f'**🌟 𝗡𝗮𝗺𝗲 ➤ {name1}[@SABHAIJEEKA].pdf\n\n<pre><code>👑 𝗕𝗮𝘁𝗰𝗵 ➤ {b_name}</code></pre>\n\n\n📥 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 ➤ @Jeekamilegabot**'
           
                 if "drive" in url:
                     try:
