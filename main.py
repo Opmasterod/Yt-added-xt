@@ -630,7 +630,7 @@ async def upload(bot: Client, m: Message):
             
         
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
-            name = f'{str(count).zfill(3)}) {name1[:60]}'
+            name = f'[@ARJUN_AI]{name1[:60]}'
 
             #if 'cpvod.testbook' in url:
                 #CPVOD = url.split("/")[-2]
